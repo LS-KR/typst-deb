@@ -3,3 +3,6 @@
 .idea/
 *.xz
 build/
+typst-x86_64-*/
+typst/
+*.deb
