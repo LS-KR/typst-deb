@@ -10,7 +10,6 @@ fileName=$(curl -s https://api.github.com/repos/typst/typst/releases/latest | gr
 printf "found release file: %s\n" $fileName
 
 tar --xz -xvf $fileName
-bash ./clean.sh
 
 name=${fileName%.tar.xz}
 name=$(echo $name | tr -d " ")
